@@ -6,6 +6,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class FizzBuzzTest {
+	private static final String _1 = "1";
+	private static final String FIZZ = "Fizz";
+	private static final String BUZZ = "Buzz";
+	private static final String FizzBuzz = "FizzBuzz";
 	
 	private FizzBuzzConverter fizzBuzzConverter;
 	
@@ -16,21 +20,21 @@ public class FizzBuzzTest {
 
 	@Test
 	public void fizzBuzzConverterShouldReturnOneFor1() {
-		assertEquals("1", fizzBuzzConverter.convert(1));
+		assertEquals(_1, fizzBuzzConverter.convert(1));
 	}
 	
 	@Test
 	public void fizzBuzzConverterShouldReturnFizzForMultiplesOfThree() {
-		assertEquals("Fizz", fizzBuzzConverter.convert(3));
+		assertEquals(FIZZ, fizzBuzzConverter.convert(3));
 	}
 	
 	@Test
 	public void fizzBuzzConverterShouldReturnBuzzForMultiplesOfFive() {
-		assertEquals("Buzz", fizzBuzzConverter.convert(5));
+		assertEquals(BUZZ, fizzBuzzConverter.convert(5));
 	}
 	
 	@Test
 	public void fizzBuzzConverterShouldReturnFizzBuzzForMultiplesOfThreeAndFive() {
-		assertEquals("FizzBuzz", fizzBuzzConverter.convert(15));
+		assertEquals(FizzBuzz, fizzBuzzConverter.convert(15));
 	}
 }
