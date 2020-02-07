@@ -23,4 +23,9 @@ public class FizzBuzzTest {
 	public void fizzBuzzConverterShouldReturnFizzForMultiplesOfThree() {
 		assertEquals("Fizz", fizzBuzzConverter.convert(3));
 	}
+	
+	@Test
+	public void fizzBuzzConverterShouldReturnBuzzForMultiplesOfFive() {
+		assertEquals("Buzz", fizzBuzzConverter.convert(5));
+	}
 }
